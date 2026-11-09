@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Notes</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Secure Notes</h1>
+
+        <!-- Authentication section -->
+        <section id="auth-section">
+
+            <div class="card">
+                <h2>Register</h2>
+
+                <input id="reg-username" placeholder="Username">
+                <input id="reg-email" type="email" placeholder="Email">
+                <input id="reg-password" type="password" placeholder="Password">
+
+                <button onclick="register()">Register</button>
+            </div>
+
+            <div class="card">
+                <h2>Login</h2>
+
+                <input id="login-email" type="email" placeholder="Email">
+                <input id="login-password" type="password" placeholder="Password">
+
+                <button onclick="login()">Login</button>
+            </div>
+
+        </section>
+
+        <!-- Notes section -->
+        <section id="notes-section" hidden>
+
+            <div class="header">
+                <h2>My Notes</h2>
+                <button onclick="logout()">Logout</button>
+            </div>
+
+            <div class="card">
+                <h3>Create Note</h3>
+
+                <input id="note-title" placeholder="Note title">
+                <textarea id="note-content" placeholder="Write your note..."></textarea>
+
+                <button onclick="createNote()">Save Note</button>
+            </div>
+
+            <div id="notes-list"></div>
+
+        </section>
+
+        <p id="message"></p>
+
+    </div>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>
