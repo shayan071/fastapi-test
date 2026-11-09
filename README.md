@@ -13,3 +13,5 @@ fastapi_auth_project/
 ├── requirements.txt      # Project dependencies
 └── README.md
 
+Contains authentication, authorization, hashing and encryption features.
+Auth and authtication are done by using JWT.
